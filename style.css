@@ -175,7 +175,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* Adjusted for 21 photos */
+  grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: 100px 300px;
   grid-gap: 10px;
   grid-auto-flow: dense;
@@ -252,41 +252,47 @@
 
 
 .site-title {
-    text-align: center;
-    margin-top: 50px; 
+  padding-top: 100px;
+  padding-bottom: 20px; 
+  text-align: center;
+  margin-top: 30px; 
 }
 
 #contact-form {
-    max-width: 500px;
-    margin: 0 auto; 
+  max-width: 400px; 
+  margin: 0 auto; 
 }
 
 form label {
-    display: block;
-    margin-bottom: 10px; 
+  display: block;
+  margin-bottom: 8px; 
 }
 
 form input,
 form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
+  width: 100%;
+  padding: 8px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 12px; 
 }
 
 form button {
-    width: 100%; 
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+  width: 100%; 
+  padding: 10px;
+  background-color: #040404;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 form button:hover {
-    background-color: #45a049;
+  background-color: #35353580;
+}
+
+.bodyform {
+  padding-bottom: 150px; 
 }
 
 
@@ -310,8 +316,6 @@ form button:hover {
   vertical-align: top;
 }
 
-/* Footer left */
-
 .footer-distributed .footer-left{
   width: 40%;
 }
@@ -320,10 +324,6 @@ form button:hover {
   width: 100px;
   height: 100%;
 }
-
-
-
-/* Footer links */
 
 .footer-distributed .footer-links{
   color:  #0e0e0ed4;
@@ -346,11 +346,9 @@ form button:hover {
   margin: 0;
 }
 
-/* Footer Center */
-
 .footer-distributed .footer-center i {
   color:#0e0e0ed4;
-  font-size: 25px; /* Changed to 25px */
+  font-size: 25px; 
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -361,7 +359,7 @@ form button:hover {
 }
 
 .footer-distributed .footer-center i.fa-envelope {
-  font-size: 17px; /* Changed to 17px */
+  font-size: 17px; 
   line-height: 38px;
 }
 
@@ -371,13 +369,13 @@ form button:hover {
   font-weight: 400;
   vertical-align: middle;
   margin: 0;
-  font-size: 15px; /* Added font size 15px */
+  font-size: 15px; 
 }
 
 .footer-distributed .footer-center p span {
   display: block;
   font-weight: normal;
-  font-size: 14px; /* Changed to 14px */
+  font-size: 14px; 
   line-height: 2;
 }
 
@@ -400,14 +398,13 @@ form button:hover {
   content: none;
 }
 
-/* Footer Right */
-
 .footer-distributed .footer-right{
   width: 20%;
 }
 
 .footer-distributed .footer-icons{
   margin-top: 25px;
+  position: relative;
   display: flex;
   justify-content: flex-end; 
 }
@@ -425,6 +422,7 @@ form button:hover {
   margin-right: 0;
   margin-bottom: 5px;
 }
+
 
 html {
   scroll-behavior: smooth;
