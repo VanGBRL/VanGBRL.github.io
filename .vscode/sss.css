@@ -1,0 +1,259 @@
+
+
+/* OLD */
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+.site-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.site-title h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.site-title h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    background-size: cover;
+}
+
+.logo-heading {
+    display: flex;
+    align-items: center;
+}
+
+.logo-heading img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 5px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start; 
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main {
+    padding: 50px;
+    margin-top: 100px; 
+}
+
+.about {
+    text-align: center; 
+}
+
+.about h2 {
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 5rem; 
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content {
+    font-family: 'Playfair Display', serif;
+    flex: 1;
+    z-index: 1;
+    margin-bottom: 3em; 
+}
+
+.containerimg {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    overflow: hidden;
+    border: 5px solid #ffffff00;
+    border-radius: 8px;
+    box-shadow: 15px 30px 35px rgba(2, 2, 14, 0.3);
+}
+
+.wrapperimg {
+    display: flex;
+    gap: 10px;
+    animation: slide 20s infinite;
+}
+
+.wrapperimg img {
+    width: auto;
+    height: 100%;
+    max-height: 225px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.photos h2 {
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.photos {
+    padding: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center; 
+    padding: 20px; 
+    background-color: #0f0f0f; 
+    border-radius: 8px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photo-gallery img {
+    width: calc(33.33% - 10px);
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    position: relative;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.carousel-indicators li {
+    background-color: #888; 
+    border-color: #888; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal img {
+    width: 100%;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+:target {
+    display: block;
+}
